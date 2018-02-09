@@ -1,0 +1,296 @@
+/* HEADER */
+
+header .top-bar {
+	background-color: #2d2d2d;
+	color: #fff;
+	height: 3.5rem;
+}
+
+header .top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #2d2d2d;
+	font-family: Lato;
+	height: 3.5rem;
+	line-height: 3.5rem;
+}
+
+header .top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	line-height: 3.5rem;
+	background-color: #5d576b;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+.top-bar-section ul .divider {
+	border-right: none;
+}
+
+header img {
+	height: 80%;
+	position: relative;
+	transform: translateY(-50%);
+	top: 60%;
+	left: 10%;
+}
+
+/* BREADCRUMBS */
+
+.nav-breadcrumbs {
+	font-family: Lato;
+}
+
+.nav-breadcrumbs .breadcrumbs li a {
+	color: #5d576b;
+}
+
+/* MAIN */
+
+.home .example-orbit {
+	position: relative;
+}
+
+.home .example-orbit img {
+	width: 100%;
+}
+
+.orbit-container .orbit-slides-container > * .orbit-caption {
+	padding: 13vh;
+}
+
+.orbit-container:hover .orbit-timer > span {
+	display: none;
+}
+
+.home .caption {
+	position: absolute;
+	top: 5vh;
+	right: 5%;
+	font-size: 4vh;
+	font-family: Lato;
+	font-weight: 100;
+	color: #99e1d9;
+}
+
+.home .caption span {
+	color: #fff;
+	font-weight: 600;
+}
+
+.home a .caption-link {
+	position: absolute;
+	top: 10vh;
+	right: 5%;
+	color: #fff;
+	font-family: Ubuntu;
+	font-size: 8vh;
+	font-weight: 900;
+}
+
+.home .caption-link:hover {
+	text-decoration: underline;
+}
+
+.home .catagories {
+	background-color: #99e1d9;
+	padding: 6rem 0 8rem;
+}
+
+.home .catagories h1 {
+	color: #fff;
+	font-family: Ubuntu;
+	font-weight: 900;
+}
+
+.home .catagories p {
+	color: #fff;
+}
+
+.home .catagories .container {
+	border: .5rem #fff solid;
+}
+
+.home main .container {
+  	position: relative;
+}
+
+.home main .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .25s ease;
+  	background-color: rgba(0, 0, 0, .4);
+}
+
+.home main .container:hover .overlay {
+  	opacity: 1;
+}
+
+.home main .overlay-text p {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	font-family: Lato;
+  	color: #fff;
+  	font-size: 1.75rem;
+}
+
+/* CATAGORY PAGES */
+
+main .panel .right span {
+	text-decoration: line-through;
+	color: #bbb;
+}
+
+/* PRODUCT PAGES */
+
+.product-page main .product-title {
+	font-family: Ubuntu;
+	font-weight: 900;
+}
+
+.product-page main .product-price {
+	font-family: Lato;
+}
+
+.product-page main .product-description {
+	font-family: Lato;
+}
+
+.product-page main .button {
+	font-family: Lato;
+	background-color: #5d576b;
+	width: 100%;
+}
+
+.product-page main .button:hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+.product-page aside {
+	padding-bottom: 3rem;
+}
+
+.product-page aside h1 {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+.product-page aside img {
+	height: 100%;
+	width: 100%;
+}
+
+.product-page aside .container {
+  	position: relative;
+}
+
+.product-page aside .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .25s ease;
+  	background-color: rgba(0, 0, 0, .4);
+}
+
+.product-page aside .container:hover .overlay {
+  	opacity: 1;
+}
+
+.product-page aside .overlay-text p {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	font-family: Lato;
+  	color: #fff;
+  	font-size: 1.75rem;
+}
+
+/* PAGINATION */
+
+.pagination-centered .pagination li a {
+	color: #2d2d2d;
+	border-radius: 2px;
+}
+
+.pagination-centered .pagination a:hover {
+	background-color: #99e1d9;
+	color: #fff;
+	transition: .25s;
+}
+
+.pagination-centered .pagination .current a {
+	background-color: #5d576b;
+}
+
+.pagination-centered .pagination .current a:hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #2d2d2d;
+	color: #fff;
+	padding: 2rem;
+	font-family: Lato;
+}
+
+footer img {
+	width: 80%;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	line-height: 2;
+}
+
+footer ul li a 	{
+	color: #fff;
+}
+
+footer ul li a:hover {
+	color: #5d576b;
+	transition: .25s;
+}
+
+footer .description p {
+	font-size: .9rem;
+	line-height: 1.8;
+}
+
+footer .social ul li {
+	font-size: 1.5rem;
+}
+
+footer i {
+	color: #fff;
+}
+
+footer i:hover {
+	color: #5d576b;
+	transition: .25s; 
+}
