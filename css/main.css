@@ -195,7 +195,7 @@ ul, ol, dl {
 
 .home .testimonies {
 	background-color: #2d2d2d;
-	padding: 6rem 0 4rem;
+	padding: 5rem 0 4rem;
 	border-bottom: 1px dashed #fff;
 }
 
@@ -207,14 +207,14 @@ ul, ol, dl {
 .home .testimonies .test-heading {
 	font-family: Ubuntu;
 	color: #fff;
-	font-size: 3rem;
-	padding-bottom: 2rem;
+	font-size: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 
 .home .testimonies .profile-name {
 	font-family: Lato;
 	color: #fff;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	margin-top: -.5rem;
 }
 
@@ -222,6 +222,7 @@ ul, ol, dl {
 	font-family: Lato;
 	color: #fff;
 	padding-bottom: .75rem;
+	font-size: .9rem;
 }
 
 .home .testimonies .stars {
