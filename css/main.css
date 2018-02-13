@@ -46,11 +46,20 @@ header img {
 	font-family: Lato;
 }
 
+.nav-breadcrumbs .breadcrumbs {
+	background-color: #fff;
+	padding-left: 1.6rem;
+}
+
 .nav-breadcrumbs .breadcrumbs li a {
 	color: #5d576b;
 }
 
-/* MAIN */
+ul, ol, dl {
+	margin-bottom: 0;
+}
+
+/* HOME PAGE */
 
 .home .example-orbit {
 	position: relative;
@@ -74,7 +83,7 @@ header img {
 	right: 5%;
 	font-size: 4vh;
 	font-family: Lato;
-	font-weight: 100;
+	font-weight: 400;
 	color: #99e1d9;
 }
 
@@ -99,21 +108,128 @@ header img {
 
 .home .catagories {
 	background-color: #99e1d9;
-	padding: 6rem 0 8rem;
+	padding: 8rem 0 8rem;
+
 }
 
 .home .catagories h1 {
 	color: #fff;
 	font-family: Ubuntu;
 	font-weight: 900;
+	font-size: 3rem;
 }
 
 .home .catagories p {
 	color: #fff;
+	font-family: Lato;
+	font-size: 1.25rem;
+	padding: .5rem 0 1rem;
 }
 
 .home .catagories .container {
 	border: .5rem #fff solid;
+}
+
+.home .lyric {
+	padding: 15rem 0;
+	position: relative;
+}
+
+.home .lyric h1 {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 7.5%;
+	font-family: 'Permanent Marker';
+	color: #99e1d9;
+	font-size: 6vw;
+	line-height: 1.15;
+	border-right: 1px dashed #ccc;
+	padding: 4% 6% 4% 0;
+	width: 42.5%;
+}
+
+.home .lyric h2 {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: 7.5%;
+	font-size: 2vw;
+	text-align: right;
+	font-family: Ubuntu;
+	color: #2d2d2d;
+	width: 35%;
+}
+
+.home .lyric .credit {
+	font-family: Lato;
+	color: #ccc;
+	font-size: 1.5vw;
+}
+
+.home .tags {
+	background-color: #5d576b;
+	padding: 8rem 0 8rem;
+}
+
+.home .tags h1 {
+	font-family: Ubuntu;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.home .tags p {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.25rem;
+	padding: .5rem 0 1rem;
+
+}
+
+.home .tags .container {
+	border: .5rem #fff solid;
+}
+
+.home .testimonies {
+	background-color: #2d2d2d;
+	padding: 6rem 0 4rem;
+	border-bottom: 1px dashed #fff;
+}
+
+.home .testimonies img {
+	border: .25rem #fff solid;
+	width: 85%;
+}
+
+.home .testimonies .test-heading {
+	font-family: Ubuntu;
+	color: #fff;
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.home .testimonies .profile-name {
+	font-family: Lato;
+	color: #fff;
+	font-size: 1.75rem;
+	margin-top: -.5rem;
+}
+
+.home .testimonies .review {
+	font-family: Lato;
+	color: #fff;
+	padding-bottom: .75rem;
+}
+
+.home .testimonies .stars {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-top: -1.5rem;
+}
+
+.home .testimonies .stars .black-star {
+	color: #5d576b;
 }
 
 .home main .container {
@@ -147,22 +263,248 @@ header img {
   	font-size: 1.75rem;
 }
 
-/* CATAGORY PAGES */
+/* CATEGORY PAGES */
 
-main .panel .right span {
+.category-page .page-header {
+	padding: 3rem 0;
+	background-color: #5d576b;
+}
+
+.category-page .heading {
+	font-family: 'Ubuntu';
+	font-weight: 900;
+	color: #fff;
+	font-size: 3rem;
+}
+
+.category-page .sub-heading {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.25rem;
+	padding: .5rem 0 0 0;
+}
+
+.category-page .background {
+	background-color: #f6f6f6;
+	padding: 4rem 0;
+}
+
+.category-page .panel {
+	background-color: #fff;
+	padding: .5rem;
+	border-radius: 0;
+}
+
+.category-page h5 {
+	color: #5d576b;
+	font-family: Ubuntu;
+	font-size: 1.25rem;
+}
+
+.category-page h4 {
+	color: #5d576b;
+	font-family: Ubuntu;
+	font-size: 1.5rem;
+}
+
+.category-page h4:hover {
+	text-decoration: underline;
+}
+
+.category-page .inline-list li a {
+	text-decoration: none;
+	color: #cbcbcb;
+	font-family: Lato;
+}
+
+.category-page .inline-list li a:hover {
+	color: #5d576b;
+	transition: .25s;
+}
+
+.category-page .right .cross-out {
 	text-decoration: line-through;
-	color: #bbb;
+	color: #cbcbcb;
+	padding-right: .3rem;
+}
+
+.category-page main .container {
+  	position: relative;
+}
+
+.category-page main .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .25s ease;
+  	background-color: rgba(0, 0, 0, .4);
+}
+
+.category-page main .container:hover .overlay {
+  	opacity: 1;
+}
+
+.category-page main .overlay-text p {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: #fff;
+  	font-size: 3rem;
+}
+
+/* SHOP PAGES */
+
+.shop .page-header {
+	padding: 3rem 0;
+	background-color: #5d576b;
+}
+
+.shop .heading {
+	font-family: 'Ubuntu';
+	font-weight: 900;
+	color: #fff;
+	font-size: 3rem;
+}
+
+.shop .sub-heading {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.25rem;
+	padding: .5rem 0 0 0;
+}
+
+.shop .background {
+	background-color: #f6f6f6;
+	padding: 4rem 0;
+}
+
+.shop .panel {
+	background-color: #fff;
+	padding: .5rem;
+	border-radius: 0;
+}
+
+.shop h5 {
+	color: #5d576b;
+	font-family: Ubuntu;
+	font-size: 1.25rem;
+}
+
+.shop h4 {
+	color: #5d576b;
+	font-family: Ubuntu;
+	font-size: 1.5rem;
+}
+
+.shop h4:hover {
+	text-decoration: underline;
+}
+
+.shop .inline-list li a {
+	text-decoration: none;
+	color: #cbcbcb;
+	font-family: Lato;
+}
+
+.shop .inline-list li a:hover {
+	color: #5d576b;
+	transition: .25s;
+}
+
+.shop .right .cross-out {
+	text-decoration: line-through;
+	color: #cbcbcb;
+	padding-right: .3rem;
+}
+
+.shop main .container {
+  	position: relative;
+}
+
+.shop main .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .25s ease;
+  	background-color: rgba(0, 0, 0, .4);
+}
+
+.shop main .container:hover .overlay {
+  	opacity: 1;
+}
+
+.shop main .overlay-text p {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: #fff;
+  	font-size: 3rem;
+}
+
+/* PAGINATION */
+
+.pagination-centered {
+	padding-top: 2rem;
+	font-family: Ubuntu;
+}
+
+.pagination-centered .pagination li a {
+	color: #2d2d2d;
+	border-radius: 2px;
+}
+
+.pagination-centered .pagination a:hover {
+	background-color: #99e1d9;
+	color: #fff;
+	transition: .25s;
+}
+
+.pagination-centered .pagination .current a {
+	background-color: #5d576b;
+}
+
+.pagination-centered .pagination .current a:hover {
+	background-color: #99e1d9;
+	transition: .25s;
 }
 
 /* PRODUCT PAGES */
 
+.product-page main {
+	background-color: #f6f6f6;
+	padding: 4rem;
+}
+
+.product-page main .panel {
+	background-color: #fff;
+	padding: .5rem;
+}
+
 .product-page main .product-title {
 	font-family: Ubuntu;
 	font-weight: 900;
+	font-size: 3.5rem;
+	color: #5d576b;
+	line-height: 1.15;
 }
 
 .product-page main .product-price {
 	font-family: Lato;
+	font-weight: 600;
+	color: #cbcbcb;
+	font-size: 3rem;
 }
 
 .product-page main .product-description {
@@ -181,19 +523,22 @@ main .panel .right span {
 }
 
 .product-page aside {
-	padding-bottom: 3rem;
+	background-color: #5d576b;
+	padding: 4rem 0 5rem;
 }
 
 .product-page aside h1 {
 	font-family: Ubuntu;
 	font-weight: 700;
-	font-size: 2rem;
-	padding-bottom: 1rem;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+	color: #fff;
 }
 
-.product-page aside img {
-	height: 100%;
-	width: 100%;
+.product-page aside .panel {
+	margin: 0;
+	padding: .5rem;
+	background-color: #fff;
 }
 
 .product-page aside .container {
@@ -225,28 +570,251 @@ main .panel .right span {
 	font-family: Lato;
   	color: #fff;
   	font-size: 1.75rem;
+  	text-align: center;
 }
 
-/* PAGINATION */
-
-.pagination-centered .pagination li a {
-	color: #2d2d2d;
-	border-radius: 2px;
+.product-page aside .overlay-text p span {
+	padding-left: .6rem;
 }
 
-.pagination-centered .pagination a:hover {
-	background-color: #99e1d9;
-	color: #fff;
-	transition: .25s;
-}
+/* CART PAGE */
 
-.pagination-centered .pagination .current a {
+.cart .page-header {
+	padding: 3rem 0;
 	background-color: #5d576b;
 }
 
-.pagination-centered .pagination .current a:hover {
+.cart .heading {
+	font-family: 'Ubuntu';
+	font-weight: 900;
+	color: #fff;
+	font-size: 3rem;
+}
+
+.cart .background {
+	background-color: #f6f6f6;
+	padding: 4rem 0;
+}
+
+.cart .cart-content .panel {
+	border-style: none;
+	background-color: #f6f6f6;
+}
+
+.cart .cart-content img {
+	border: .25rem solid #fff;
+	outline: 1px solid #d8d8d8;
+}
+
+.cart .panel h4 a {
+	font-family: Ubuntu;
+	color: #5d576b;
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+.cart .panel h4 a:hover {
+	text-decoration: underline;
+}
+
+.cart .panel h5 {
+	font-family: Ubuntu;
+	color: #cbcbcb;
+	font-size: 1.75rem;
+	padding: .5rem 0 .25rem;
+}
+
+.cart .panel p {
+	font-family: Lato;
+	font-size: 1rem;
+	color: #2d2d2d;
+
+}
+
+.cart button.tiny, .cart .button.tiny {
+	font-family: Lato;
+	background-color: #5d576b;
+}
+
+.cart button.tiny:hover, .cart .button.tiny:hover {
 	background-color: #99e1d9;
 	transition: .25s;
+}
+
+.cart .clearfix {
+	border: .5rem #fff solid;
+	outline: 1px solid #d8d8d8;
+}
+
+.cart button.expand, .cart .button.expand {
+	font-family: Lato;
+	background-color: #5d576b;
+}
+
+.cart button.expand:hover, .cart .button.expand:hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+.cart .button.disabled {
+	background-color: #5d576b;
+	opacity: 1;
+}
+
+.cart .button.disabled:hover {
+	background-color: #5d576b;
+	opacity: 1;
+}
+
+/* ORDER PAGE */
+
+.order main {
+	padding: 3rem 0;
+	background-color: #f6f6f6;
+	font-family: Lato;
+}
+
+.order main h1 {
+	padding-bottom: 1rem;
+	font-family: Ubuntu;
+	color: #5d576b;
+	font-weight: 900;
+	font-size: 3rem;
+}
+
+.order main .place-order {
+	padding-top: 2rem;
+}
+
+.order main .button {
+	font-family: Lato;
+	background-color: #5d576b;
+	width: 100%;
+}
+
+.order main .button.disabled {
+	background-color: #5d576b;
+	opacity: 1;
+}
+
+.order main .button.disabled:hover {
+	background-color: #5d576b;
+	opacity: 1;
+}
+
+.order main .button:hover {
+	background-color: #99e1d9;
+	transition: .25s;
+}
+
+/* CONFORMATION PAGE */
+
+.confirmation main {
+	padding: 15rem 0;
+	position: relative;
+}
+
+.confirmation .heading {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 7.5%;
+	font-family: 'Permanent Marker';
+	color: #99e1d9;
+	font-size: 9vw;
+	line-height: 1.15;
+	border-right: 1px dashed #ccc;
+	padding: 3% 6% 3% 0;
+	text-align: left;
+	width: 42.5%;
+}
+
+.confirmation .sub-heading {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: 7.5%;
+	font-size: 2vw;
+	text-align: right;
+	font-family: Lato;
+	color: #2d2d2d;
+	width: 40%;
+}
+
+.confirmation .sub-heading .order-number {
+	font-weight: 900;
+	color: #5d576b;
+	font-size: 2.5vw;
+	font-family: Ubuntu;
+	line-height: 2;
+}
+
+.confirmation .sub-heading .print {
+	font-size: 1.5vw;
+}
+
+.confirmation .sub-heading .print a {
+	text-decoration: none;
+	color: #cbcbcb; 
+}
+
+.confirmation .sub-heading .print a:hover {
+	text-decoration: underline;
+}
+
+.confirmation aside {
+	background-color: #5d576b;
+	padding: 4rem 0 5rem;
+}
+
+.confirmation aside h1 {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+	color: #fff;
+}
+
+.confirmation aside .panel {
+	margin: 0;
+	padding: .5rem;
+	background-color: #fff;
+}
+
+.confirmation aside .container {
+  	position: relative;
+}
+
+.confirmation aside .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .25s ease;
+  	background-color: rgba(0, 0, 0, .4);
+}
+
+.confirmation aside .container:hover .overlay {
+  	opacity: 1;
+}
+
+.confirmation aside .overlay-text p {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	font-family: Lato;
+  	color: #fff;
+  	font-size: 1.75rem;
+  	text-align: center;
+}
+
+.confirmation aside .overlay-text p span {
+	padding-left: .6rem;
 }
 
 /* FOOTER */
@@ -254,7 +822,7 @@ main .panel .right span {
 footer {
 	background-color: #2d2d2d;
 	color: #fff;
-	padding: 2rem;
+	padding: 3rem 0 2.5rem;
 	font-family: Lato;
 }
 
