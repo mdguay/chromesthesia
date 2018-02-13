@@ -47,12 +47,14 @@ header img {
 }
 
 .nav-breadcrumbs .breadcrumbs {
-	background-color: #fff;
-	padding-left: 1.6rem;
+	background-color: #5d576b;
+	padding: 1rem 0 1rem 1.6rem;
+	border: none;
+	border-radius: 0;
 }
 
 .nav-breadcrumbs .breadcrumbs li a {
-	color: #5d576b;
+	color: #fff;
 }
 
 ul, ol, dl {
@@ -524,21 +526,53 @@ ul, ol, dl {
 
 .product-page aside {
 	background-color: #5d576b;
-	padding: 4rem 0 5rem;
+	padding: 5rem 0 3rem;
 }
 
 .product-page aside h1 {
-	font-family: Ubuntu;
-	font-weight: 700;
-	font-size: 2.5rem;
-	padding-bottom: 2rem;
 	color: #fff;
+	font-family: Ubuntu;
+	font-weight: 900;
+	padding-bottom: 2rem;
 }
 
 .product-page aside .panel {
-	margin: 0;
-	padding: .5rem;
 	background-color: #fff;
+	padding: .5rem;
+	border-radius: 0;
+}
+
+.product-page aside h5 {
+	color: #fff;
+	font-family: Ubuntu;
+	font-size: 1.25rem;
+}
+
+.product-page aside a h4 {
+	color: #fff;
+	font-family: Ubuntu;
+	font-size: 1.5rem;
+}
+
+.product-page aside h4:hover {
+	text-decoration: underline;
+}
+
+.product-page aside .inline-list li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, .3);
+	font-family: Lato;
+}
+
+.product-page aside .inline-list li a:hover {
+	color: #99e1d9;
+	transition: .25s;
+}
+
+.product-page aside .right .cross-out {
+	text-decoration: line-through;
+	color: rgba(255, 255, 255, .3);
+	padding-right: .3rem;
 }
 
 .product-page aside .container {
@@ -567,14 +601,8 @@ ul, ol, dl {
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
-	font-family: Lato;
   	color: #fff;
-  	font-size: 1.75rem;
-  	text-align: center;
-}
-
-.product-page aside .overlay-text p span {
-	padding-left: .6rem;
+  	font-size: 3rem;
 }
 
 /* CART PAGE */
