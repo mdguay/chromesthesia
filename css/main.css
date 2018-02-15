@@ -514,6 +514,10 @@ ul, ol, dl {
 	font-family: Lato;
 }
 
+.product-page main .product-description span {
+	font-style: italic;
+}
+
 .product-page main .button {
 	font-family: Lato;
 	background-color: #5d576b;
