@@ -6,11 +6,14 @@ header .top-bar {
 	height: 3.5rem;
 }
 
+header .top-bar .title-area {
+	height: 3.5rem;
+}
+
 header .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: #2d2d2d;
 	font-family: Lato;
-	height: 3.5rem;
-	line-height: 3.5rem;
+	line-height: 2rem;
 }
 
 header .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -19,7 +22,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover {
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-	line-height: 3.5rem;
+	line-height: 2rem;
 	background-color: #5d576b;
 }
 
@@ -28,16 +31,30 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover {
 	transition: .25s;
 }
 
-.top-bar-section ul .divider {
+.top-bar-section .right .divider {
 	border-right: none;
 }
 
 header img {
-	height: 80%;
+	height: 70%;
 	position: relative;
-	transform: translateY(-50%);
+	transform: translate(-50%,-50%);
 	top: 60%;
-	left: 10%;
+	left: 6.75rem;
+}
+
+@media screen and (min-width: 40em) {
+
+	header .top-bar-section li:not(.has-form) a:not(.button) {
+		height: 3.5rem;
+		line-height: 3.5rem;
+	}
+
+	.top-bar-section li.active:not(.has-form) a:not(.button) {
+		height: 3.5rem;
+		line-height: 3.5rem;
+	}
+
 }
 
 /* BREADCRUMBS */
@@ -72,7 +89,7 @@ ul, ol, dl {
 }
 
 .orbit-container .orbit-slides-container > * .orbit-caption {
-	padding: 13vh;
+	height: 35%;
 }
 
 .orbit-container:hover .orbit-timer > span {
@@ -81,9 +98,9 @@ ul, ol, dl {
 
 .home .caption {
 	position: absolute;
-	top: 5vh;
+	top: 22.5%;
 	right: 5%;
-	font-size: 4vh;
+	font-size: 2vw;
 	font-family: Lato;
 	font-weight: 400;
 	color: #99e1d9;
@@ -96,11 +113,11 @@ ul, ol, dl {
 
 .home a .caption-link {
 	position: absolute;
-	top: 10vh;
+	top: 42.5%;
 	right: 5%;
 	color: #fff;
 	font-family: Ubuntu;
-	font-size: 8vh;
+	font-size: 4vw;
 	font-weight: 900;
 }
 
@@ -110,30 +127,30 @@ ul, ol, dl {
 
 .home .catagories {
 	background-color: #99e1d9;
-	padding: 8rem 0 8rem;
-
+	padding: 8rem 5%;
 }
 
 .home .catagories h1 {
 	color: #fff;
 	font-family: Ubuntu;
 	font-weight: 900;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .home .catagories p {
 	color: #fff;
 	font-family: Lato;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem 0 1rem;
 }
 
 .home .catagories .container {
 	border: .5rem #fff solid;
+	margin-bottom: 2rem;
 }
 
 .home .lyric {
-	padding: 15rem 0;
+	padding: 20% 0;
 	position: relative;
 }
 
@@ -171,31 +188,32 @@ ul, ol, dl {
 
 .home .tags {
 	background-color: #5d576b;
-	padding: 8rem 0 8rem;
+	padding: 8rem 5%;
 }
 
 .home .tags h1 {
 	font-family: Ubuntu;
 	color: #fff;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 900;
 }
 
 .home .tags p {
 	color: #fff;
 	font-family: Lato;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem 0 1rem;
 
 }
 
 .home .tags .container {
 	border: .5rem #fff solid;
+	margin-bottom: 2rem;
 }
 
 .home .testimonies {
 	background-color: #2d2d2d;
-	padding: 5rem 0 4rem;
+	padding: 5rem;
 	border-bottom: 1px dashed #fff;
 }
 
@@ -266,10 +284,38 @@ ul, ol, dl {
   	font-size: 1.75rem;
 }
 
+@media screen and (min-width: 40em) {
+
+	.home .catagories h1 {
+		font-size: 3rem;
+	}
+
+	.home .catagories p {
+		font-size: 1.25rem;
+	}
+
+	.home .catagories .container {
+		margin-bottom: 0;
+	}
+
+	.home .tags h1 {
+		font-size: 3rem;
+	}
+
+	.home .tags p {
+		font-size: 1.25rem;
+	}
+
+	.home .tags .container {
+		margin-bottom: 0;
+	}
+
+}
+
 /* CATEGORY PAGES */
 
 .category-page .page-header {
-	padding: 3rem 0;
+	padding: 3rem 5%;
 	background-color: #5d576b;
 }
 
@@ -277,19 +323,23 @@ ul, ol, dl {
 	font-family: 'Ubuntu';
 	font-weight: 900;
 	color: #fff;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .category-page .sub-heading {
 	color: #fff;
 	font-family: Lato;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem 0 0 0;
 }
 
 .category-page .background {
 	background-color: #f6f6f6;
 	padding: 4rem 0;
+}
+
+.category-page .content {
+	padding: 0 10%;
 }
 
 .category-page .panel {
@@ -361,10 +411,34 @@ ul, ol, dl {
   	font-size: 3rem;
 }
 
+@media screen and (min-width: 40em) {
+
+	.category-page .heading {
+		font-size: 3rem;
+	}
+
+	.category-page .sub-heading {
+		font-size: 1.25rem;
+	}
+
+	.category-page .content {
+		padding: 0 5%;
+	}
+
+}
+
+@media screen and (min-width: 60em) {
+
+	.category-page .content {
+		padding: 0;
+	}
+
+}
+
 /* SHOP PAGES */
 
 .shop .page-header {
-	padding: 3rem 0;
+	padding: 3rem 5%;
 	background-color: #5d576b;
 }
 
@@ -372,19 +446,23 @@ ul, ol, dl {
 	font-family: 'Ubuntu';
 	font-weight: 900;
 	color: #fff;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .shop .sub-heading {
 	color: #fff;
 	font-family: Lato;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem 0 0 0;
 }
 
 .shop .background {
 	background-color: #f6f6f6;
 	padding: 4rem 0;
+}
+
+.shop .content {
+	padding: 0 10%;
 }
 
 .shop .panel {
@@ -454,6 +532,30 @@ ul, ol, dl {
   	transform: translate(-50%, -50%);
   	color: #fff;
   	font-size: 3rem;
+}
+
+@media screen and (min-width: 40em) {
+
+	.shop .heading {
+		font-size: 3rem;
+	}
+
+	.shop .sub-heading {
+		font-size: 1.25rem;
+	}
+
+	.shop .content {
+		padding: 0 5%;
+	}
+
+}
+
+@media screen and (min-width: 60em) {
+
+	.shop .content {
+		padding: 0;
+	}
+
 }
 
 /* PAGINATION */
@@ -531,7 +633,7 @@ ul, ol, dl {
 
 .product-page aside {
 	background-color: #5d576b;
-	padding: 5rem 0 3rem;
+	padding: 5rem 0;
 }
 
 .product-page aside h1 {
@@ -797,7 +899,7 @@ ul, ol, dl {
 
 .confirmation aside {
 	background-color: #5d576b;
-	padding: 4rem 0 5rem;
+	padding: 4rem 0;
 }
 
 .confirmation aside h1 {
@@ -855,31 +957,46 @@ ul, ol, dl {
 footer {
 	background-color: #2d2d2d;
 	color: #fff;
-	padding: 3rem 0 2.5rem;
+	padding: 3rem 5%;
 	font-family: Lato;
 }
 
-footer img {
-	width: 80%;
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #5d576b;
+	transition: .25s;
+}
+
+footer .copyright {
+	font-size: .9rem;
+}
+
+footer .links {
+	display: none;
 }
 
 footer ul {
 	list-style-type: none;
 	margin: 0;
-	line-height: 2;
+	line-height: 1.5;
+}
+
+footer .right li {
+	margin-left: 1rem;
 }
 
 footer ul li a 	{
-	color: #fff;
+	font-size: .75rem;
 }
 
-footer ul li a:hover {
-	color: #5d576b;
-	transition: .25s;
+footer .description {
+	display: none;
 }
 
 footer .description p {
-	font-size: .9rem;
 	line-height: 1.8;
 }
 
@@ -887,11 +1004,59 @@ footer .social ul li {
 	font-size: 1.5rem;
 }
 
-footer i {
+footer .fa {
 	color: #fff;
+	font-size: 1rem;
+	padding-bottom: 1rem;
 }
 
 footer i:hover {
 	color: #5d576b;
 	transition: .25s; 
 }
+
+@media screen and (min-width: 40em) {
+
+	footer .copyright {
+		font-size: .9rem;
+	}
+
+	footer ul {
+		line-height: 2;
+	}
+
+	footer ul li a {
+		font-size: .9rem;
+	}
+
+	footer .links {
+		display: block;
+	}
+
+	footer .fa {
+		font-size: 1.25rem;
+	}
+
+}
+
+@media screen and (min-width: 64em) {
+
+	footer ul li a {
+		font-size: .9rem;
+	}
+
+	footer .description {
+		display: block;
+	}
+
+	footer .description p {
+		font-size: .9rem
+	}
+
+	footer .fa {
+		font-size: 1.5rem;
+	}
+
+}
+
+
