@@ -213,20 +213,20 @@ ul, ol, dl {
 
 .home .testimonies {
 	background-color: #2d2d2d;
-	padding: 5rem;
+	padding: 5rem 5%;
 	border-bottom: 1px dashed #fff;
 }
 
 .home .testimonies img {
 	border: .25rem #fff solid;
-	width: 85%;
+	width: 100%;
 }
 
 .home .testimonies .test-heading {
 	font-family: Ubuntu;
 	color: #fff;
-	font-size: 2.5rem;
-	padding-bottom: 2.5rem;
+	font-size: 2rem;
+	padding-bottom: 2rem;
 }
 
 .home .testimonies .profile-name {
@@ -247,6 +247,7 @@ ul, ol, dl {
 	color: #fff;
 	font-size: 1.5rem;
 	margin-top: -1.5rem;
+	padding-bottom: 2rem;
 }
 
 .home .testimonies .stars .black-star {
@@ -310,6 +311,19 @@ ul, ol, dl {
 		margin-bottom: 0;
 	}
 
+	.home .testimonies {
+		padding: 5rem;
+	}
+
+	.home .testimonies img {
+		width: 85%;
+	}
+
+	.home .testimonies .test-heading {
+		font-size: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+
 }
 
 /* CATEGORY PAGES */
@@ -351,13 +365,14 @@ ul, ol, dl {
 .category-page h5 {
 	color: #5d576b;
 	font-family: Ubuntu;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 .category-page h4 {
 	color: #5d576b;
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 .category-page h4:hover {
@@ -427,7 +442,7 @@ ul, ol, dl {
 
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 64em) {
 
 	.category-page .content {
 		padding: 0;
@@ -474,13 +489,14 @@ ul, ol, dl {
 .shop h5 {
 	color: #5d576b;
 	font-family: Ubuntu;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 .shop h4 {
 	color: #5d576b;
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 .shop h4:hover {
@@ -550,7 +566,7 @@ ul, ol, dl {
 
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 64em) {
 
 	.shop .content {
 		padding: 0;
@@ -589,7 +605,7 @@ ul, ol, dl {
 
 .product-page main {
 	background-color: #f6f6f6;
-	padding: 4rem;
+	padding: 4rem 5%;
 }
 
 .product-page main .panel {
@@ -600,20 +616,23 @@ ul, ol, dl {
 .product-page main .product-title {
 	font-family: Ubuntu;
 	font-weight: 900;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	color: #5d576b;
 	line-height: 1.15;
+	margin-bottom: 1rem;
 }
 
 .product-page main .product-price {
 	font-family: Lato;
-	font-weight: 600;
+	font-weight: 400;
 	color: #cbcbcb;
-	font-size: 3rem;
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }
 
 .product-page main .product-description {
 	font-family: Lato;
+	margin-bottom: 2rem;
 }
 
 .product-page main .product-description span {
@@ -633,7 +652,7 @@ ul, ol, dl {
 
 .product-page aside {
 	background-color: #5d576b;
-	padding: 5rem 0;
+	padding: 5rem 5%;
 }
 
 .product-page aside h1 {
@@ -652,13 +671,14 @@ ul, ol, dl {
 .product-page aside h5 {
 	color: #fff;
 	font-family: Ubuntu;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 
 .product-page aside a h4 {
 	color: #fff;
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 .product-page aside h4:hover {
@@ -712,10 +732,34 @@ ul, ol, dl {
   	font-size: 3rem;
 }
 
+@media screen and (min-width: 40em) {
+
+	.product-page main .product-title {
+		font-size: 3rem;
+	}
+
+	.product-page main .product-price {
+		font-size: 2.25rem;
+	}
+
+}
+
+@media screen and (min-width: 64em) {
+
+	.product-page main .product-title {
+		font-size: 3.5rem;
+	}
+
+	.product-page main .product-price {
+		font-size: 2.5rem;
+	}
+
+}
+
 /* CART PAGE */
 
 .cart .page-header {
-	padding: 3rem 0;
+	padding: 3rem 5%;
 	background-color: #5d576b;
 }
 
@@ -723,12 +767,16 @@ ul, ol, dl {
 	font-family: 'Ubuntu';
 	font-weight: 900;
 	color: #fff;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .cart .background {
 	background-color: #f6f6f6;
 	padding: 4rem 0;
+}
+
+.cart .content {
+	padding: 0 10%;
 }
 
 .cart .cart-content .panel {
@@ -737,15 +785,22 @@ ul, ol, dl {
 }
 
 .cart .cart-content img {
-	border: .25rem solid #fff;
+	border: .5rem solid #fff;
 	outline: 1px solid #d8d8d8;
+	margin-bottom: 2rem;
 }
 
 .cart .panel h4 a {
 	font-family: Ubuntu;
 	color: #5d576b;
+	font-size: 1.5rem;
 	font-weight: 900;
-	font-size: 2rem;
+	line-height: 1.25;
+	padding-right: 2rem;
+}
+
+.cart .cart-checkout {
+	margin: 0 5%;
 }
 
 .cart .panel h4 a:hover {
@@ -755,7 +810,7 @@ ul, ol, dl {
 .cart .panel h5 {
 	font-family: Ubuntu;
 	color: #cbcbcb;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	padding: .5rem 0 .25rem;
 }
 
@@ -801,10 +856,39 @@ ul, ol, dl {
 	opacity: 1;
 }
 
+@media screen and (min-width: 40em) {
+
+	.cart .heading {
+		font-size: 3rem;
+	}
+
+	.cart .content {
+		padding: 0 5%;
+	}
+
+	.cart .cart-content img {
+		border: .25rem solid #fff;
+		margin-bottom: 0;
+	}
+
+	.cart .cart-checkout {
+		margin: 0;
+	}
+
+}
+
+@media screen and (min-width: 64em) {
+
+	.cart .content {
+		padding: 0;
+	}
+
+}
+
 /* ORDER PAGE */
 
 .order main {
-	padding: 3rem 0;
+	padding: 3rem 5%;
 	background-color: #f6f6f6;
 	font-family: Lato;
 }
@@ -814,7 +898,7 @@ ul, ol, dl {
 	font-family: Ubuntu;
 	color: #5d576b;
 	font-weight: 900;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .order main .place-order {
@@ -842,10 +926,18 @@ ul, ol, dl {
 	transition: .25s;
 }
 
+@media screen and (min-width: 40em) {
+	
+	.order main h1 {
+		font-size: 3rem;
+	}
+
+}
+
 /* CONFORMATION PAGE */
 
 .confirmation main {
-	padding: 15rem 0;
+	padding: 20% 0;
 	position: relative;
 }
 
@@ -899,19 +991,19 @@ ul, ol, dl {
 
 .confirmation aside {
 	background-color: #5d576b;
-	padding: 4rem 0;
+	padding: 4rem 5%;
 }
 
 .confirmation aside h1 {
 	font-family: Ubuntu;
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	padding-bottom: 2rem;
 	color: #fff;
 }
 
 .confirmation aside .panel {
-	margin: 0;
+	margin: 0 0 2rem 0;
 	padding: .5rem;
 	background-color: #fff;
 }
@@ -950,6 +1042,18 @@ ul, ol, dl {
 
 .confirmation aside .overlay-text p span {
 	padding-left: .6rem;
+}
+
+@media screen and (min-width: 40em) {
+
+	.confirmation aside h1 {
+		font-size: 2.5rem;
+	}
+
+	.confirmation aside .panel {
+		margin: 0;
+	}
+
 }
 
 /* FOOTER */

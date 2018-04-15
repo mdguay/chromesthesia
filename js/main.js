@@ -176,6 +176,42 @@ if( $('.cart').length ){
 
 }
 
+// sample array
+
+var arr = ["\"You've got your passion, you've got your pride, but don't you know that only fools are satisfied?\"", 
+		   "\"Do you make mistakes or do you make a change? Or do you draw the line for when it's better days?\"", 
+		   "\"I thought it up and brought up the past, once you know you can never go back, I gotta take it on the other side.\"", 
+		   "\"It took a little while for your mind to find it, but once you see the genius it's intimidating, isn't it?\"", 
+		   "\"Don't forget the happy thoughts. All you need is happy thoughts.\"",
+		   "\"So wake me up in the spring, while I'm high off my American dream.\"",
+		   "\"If you just give me some time I can open up your mind. If you let it shine, you can free your mind.\"",
+		   ];
+	function getRandomlyric(){
+  		// get random number based on length of array
+  		var rand = Math.floor(Math.random() * arr.length);
+  		// display random value
+  		$('.lyric h2').text( arr[rand] );
+	}
+
+var num = ['Order Number: 308512033',
+		   'Order Number: 840163726',
+		   'Order Number: 736392746',
+		   'Order Number: 105937624',
+		   'Order Number: 817591057',
+		   'Order Number: 287563986',
+		   'Order Number: 109837562'];
+	function getRandomnumber(){
+  		// get random number based on length of array
+  		var rand = Math.floor(Math.random() * num.length);
+  		// display random value
+  		$('.order-number').text( num[rand] );
+	}
+
+// call function when page loads
+getRandomlyric();
+getRandomnumber();
+
+
 // saving arrays to local storage
 // https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
 
