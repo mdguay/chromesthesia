@@ -178,19 +178,25 @@ if( $('.cart').length ){
 
 // sample array
 
-var arr = ["\"You've got your passion, you've got your pride, but don't you know that only fools are satisfied?\"", 
-		   "\"Do you make mistakes or do you make a change? Or do you draw the line for when it's better days?\"", 
-		   "\"I thought it up and brought up the past, once you know you can never go back, I gotta take it on the other side.\"", 
-		   "\"It took a little while for your mind to find it, but once you see the genius it's intimidating, isn't it?\"", 
-		   "\"Don't forget the happy thoughts. All you need is happy thoughts.\"",
-		   "\"So wake me up in the spring, while I'm high off my American dream.\"",
-		   "\"If you just give me some time I can open up your mind. If you let it shine, you can free your mind.\"",
+var arr = ["\"You've got your passion, you've got your pride, but don't you know that only fools are satisfied?\"</br><span>\"Vienna\" by Billy Joel</span>", 
+		   "\"Do you make mistakes or do you make a change? Or do you draw the line for when it's better days?\"</br><span>\"BLEACH\" by BROCKHAMPTON</span>", 
+		   "\"I thought it up and brought up the past, once you know you can never go back, I gotta take it on the other side.\"</br><span>\"Otherside\" by Red Hot Chili Peppers</span>", 
+		   "\"It took a little while for your mind to find it, but once you see the genius</br>it's intimidating, isn't it?\"</br><span>\"Pre-Occupied\" by Jon Bellion</span>", 
+		   "\"Don't forget the happy thoughts. All you need is happy thoughts.\"</br><span>\"Same Drugs\" by Chance The Rapper</span>",
+		   "\"So wake me up in the spring, while I'm high off my American dream.\"</br><span>\"American Teen\" by Khalid</span>",
+		   "\"If you just give me some time I can open up your mind. If you let it shine, you can free your mind.\"</br><span>\"Sober\" by Childish Gambino</span>",
+		   "\"Cause I see the world in different colors to someone like you\"</br><span>\"Settle\" by Two Door Cinema Club</span>",
+		   "\"But it's just the price I pay, destiny is calling me. Open up my eager eyes, 'cause I'm Mr. Brightside.\"</br><span>\"Mr. Brightside\" by The Killers</span>",
+		   "\"And I come in peace to compete, I don't run if you'd rather leap, my statistics go up in weeks.\"</br><span>\"Rigamortis\" by Kendrick Lamar</span>",
+		   "\"But I'm a champion, so I turned tragedy to triumph, make music thats fire, spit my soul through the wire.\"</br><span>\"Through the Wire\" by Kanye West</span>",
+		   "\"Something sinister to it. Pendulum swinging slow, a degenerate moving through the city with criminal stealth.\"</br><span>\"Chum\" by Earl Sweatshirt</span>",
+		   "\"Hello there, the angel from my nightmare, shadow in the</br>background of the morgue.\"</br><span>\"I Miss You\" by Blink-182</span>",
 		   ];
 	function getRandomlyric(){
   		// get random number based on length of array
   		var rand = Math.floor(Math.random() * arr.length);
   		// display random value
-  		$('.lyric h2').text( arr[rand] );
+  		$('.lyric h2').html( arr[rand] );
 	}
 
 var num = ['Order Number: 308512033',

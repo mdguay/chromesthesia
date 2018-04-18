@@ -180,7 +180,7 @@ ul, ol, dl {
 	width: 35%;
 }
 
-.home .lyric .credit {
+.home .lyric span {
 	font-family: Lato;
 	color: #ccc;
 	font-size: 1.5vw;
