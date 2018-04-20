@@ -14,10 +14,12 @@ header .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: #2d2d2d;
 	font-family: Lato;
 	line-height: 2rem;
+	font-size: .875rem;
+	letter-spacing: 1px;
 }
 
 header .top-bar-section li:not(.has-form) a:not(.button):hover {
-	background-color: #99e1d9;
+	background-color: #5d576b;
 	transition: .25s;
 }
 
@@ -27,7 +29,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover {
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-	background-color: #99e1d9;
+	background-color: #5d576b;
 	transition: .25s;
 }
 
@@ -135,6 +137,7 @@ ul, ol, dl {
 	font-family: Ubuntu;
 	font-weight: 900;
 	font-size: 2rem;
+	line-height: 1;
 }
 
 .home .catagories p {
@@ -154,25 +157,26 @@ ul, ol, dl {
 	position: relative;
 }
 
-.home .lyric h1 {
+.home .lyric-content {
 	position: absolute;
-	transform: translateY(-50%);
+	transform: translate(-50%,-50%);
 	top: 50%;
-	left: 7.5%;
+	left: 50%;
+	width: 80%;
+}
+
+.home .lyric h1 {
+	float: left;
 	font-family: 'Permanent Marker';
 	color: #99e1d9;
 	font-size: 6vw;
 	line-height: 1.15;
 	border-right: 1px dashed #ccc;
-	padding: 4% 6% 4% 0;
-	width: 42.5%;
+	width: 50%;
 }
 
 .home .lyric h2 {
-	position: absolute;
-	transform: translateY(-50%);
-	top: 50%;
-	right: 7.5%;
+	float: right;
 	font-size: 2vw;
 	text-align: right;
 	font-family: Ubuntu;
@@ -366,6 +370,7 @@ ul, ol, dl {
 	color: #5d576b;
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	font-weight: 300;
 }
 
 .category-page h4 {
@@ -490,6 +495,7 @@ ul, ol, dl {
 	color: #5d576b;
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	font-weight: 300;
 }
 
 .shop h4 {
@@ -613,6 +619,10 @@ ul, ol, dl {
 	padding: .5rem;
 }
 
+.product-page main .content {
+	padding-top: 1rem;
+}
+
 .product-page main .product-title {
 	font-family: Ubuntu;
 	font-weight: 900;
@@ -620,6 +630,7 @@ ul, ol, dl {
 	color: #5d576b;
 	line-height: 1.15;
 	margin-bottom: 1rem;
+	letter-spacing: -1px;
 }
 
 .product-page main .product-price {
@@ -641,12 +652,11 @@ ul, ol, dl {
 
 .product-page main .button {
 	font-family: Lato;
-	background-color: #5d576b;
-	width: 100%;
+	background-color: #99e1d9;
 }
 
 .product-page main .button:hover {
-	background-color: #99e1d9;
+	background-color: #5d576b;
 	transition: .25s;
 }
 
@@ -823,11 +833,11 @@ ul, ol, dl {
 
 .cart button.tiny, .cart .button.tiny {
 	font-family: Lato;
-	background-color: #5d576b;
+	background-color: #99e1d9;
 }
 
 .cart button.tiny:hover, .cart .button.tiny:hover {
-	background-color: #99e1d9;
+	background-color: #5d576b;
 	transition: .25s;
 }
 
@@ -1074,8 +1084,8 @@ footer a:hover {
 	transition: .25s;
 }
 
-footer .copyright {
-	font-size: .9rem;
+footer img {
+	width: 100%;
 }
 
 footer .links {
@@ -1110,7 +1120,8 @@ footer .social ul li {
 
 footer .fa {
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.25rem;
+	padding-top: .5rem;
 	padding-bottom: 1rem;
 }
 
@@ -1120,10 +1131,6 @@ footer i:hover {
 }
 
 @media screen and (min-width: 40em) {
-
-	footer .copyright {
-		font-size: .9rem;
-	}
 
 	footer ul {
 		line-height: 2;
@@ -1139,6 +1146,7 @@ footer i:hover {
 
 	footer .fa {
 		font-size: 1.25rem;
+		padding-top: 0;
 	}
 
 }
@@ -1159,6 +1167,7 @@ footer i:hover {
 
 	footer .fa {
 		font-size: 1.5rem;
+		padding-top: 0;
 	}
 
 }
